@@ -1,0 +1,100 @@
+/* General Company Section Styling */
+.company-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.company-container h1 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.company-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.company-values,
+.company-vision {
+  margin-top: 40px;
+}
+
+.company-values h2,
+.company-vision h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.company-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.company-values li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.company-values li strong {
+  color: #0056b3;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .company-container {
+    padding: 30px 20px;
+  }
+
+  .company-container h1 {
+    font-size: 32px;
+  }
+
+  .company-container p {
+    font-size: 16px;
+  }
+
+  .company-values h2,
+  .company-vision h2 {
+    font-size: 22px;
+  }
+
+  .company-values li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .company-container {
+    padding: 20px 15px;
+  }
+
+  .company-container h1 {
+    font-size: 26px;
+  }
+
+  .company-container p {
+    font-size: 14px;
+  }
+
+  .company-values h2,
+  .company-vision h2 {
+    font-size: 20px;
+  }
+
+  .company-values li {
+    font-size: 14px;
+  }
+}

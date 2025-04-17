@@ -1,0 +1,265 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 1px 3px -2px #000;
+  background-color: #fff;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  width: 60px; /* Adjust size if needed */
+  height: 60px; /* Adjust size if needed */
+}
+
+.navbar-logo p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #525252;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 34px;
+}
+
+.navbar-menu li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  color: #525252;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+}
+
+.navbar-menu hr {
+  background-color: #ff4141;
+  height: 3px;
+  width: 89%;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+}
+
+.navbar-signin-cart {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-signin-cart button {
+  padding: 14px 40px;
+  border: 2px solid #7a7a7a;
+  color: #525252;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.navbar-signin-cart button a {
+  text-decoration: none;
+}
+
+.navbar-signin-cart button:active {
+  background-color: #f3f3f3;
+}
+
+.navbar-signin-cart img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  margin-left: -45px;
+  height: 22px;
+  width: 22px;
+  background-color: #ff4141;
+  color: #fff;
+  border-radius: 11px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-dropdown {
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.show-toggle {
+  display: flex;
+}
+
+.nav-dropdown.open {
+  display: block;
+  transform: rotate(180deg); /* Rotate the icon when open */
+}
+
+@media (max-width: 1280px) {
+  .navbar {
+    padding: 18px 26px;
+  }
+  .navbar-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar-logo p {
+    font-size: 28px;
+  }
+  .navbar-menu {
+    gap: 24px;
+  }
+  .navbar-menu li {
+    font-size: 20px;
+  }
+  .navbar-signin-cart {
+    gap: 20px;
+  }
+  .navbar-signin-cart button {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+  .navbar-signin-cart img {
+    width: 40px;
+    height: 40px;
+  }
+  .cart-count {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+  .navbar-logo img {
+    width: 45px;
+    height: 45px;
+  }
+  .navbar-logo p {
+    font-size: 24px;
+  }
+  .navbar-menu {
+    gap: 22px;
+  }
+  .navbar-menu li {
+    font-size: 18px;
+  }
+  .navbar-signin-cart {
+    gap: 18px;
+  }
+  .navbar-signin-cart button {
+    padding: 10px 24px;
+    font-size: 18px;
+  }
+  .navbar-signin-cart img {
+    width: 35px;
+    height: 35px;
+  }
+  .cart-count {
+    margin-left: -25px;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+  .navbar-logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar-logo p {
+    font-size: 20px;
+  }
+  .navbar-menu {
+    gap: 18px;
+  }
+  .navbar-menu li {
+    font-size: 16px;
+  }
+  .navbar-signin-cart {
+    gap: 16px;
+  }
+  .navbar-signin-cart button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .navbar-signin-cart img {
+    width: 30px;
+    height: 30px;
+  }
+  .cart-count {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+  .navbar-menu {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    gap: 24px;
+    height: 80px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navbar-menu li {
+    font-size: 20px;
+  }
+  .nav-dropdown {
+    display: block;
+  }
+  .show-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar-menu {
+    height: 60px;
+  }
+  .navbar-signin-cart button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .nav-dropdown {
+    width: 30px;
+    height: 30px;
+  }
+}

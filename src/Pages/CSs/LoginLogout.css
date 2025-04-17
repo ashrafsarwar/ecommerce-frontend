@@ -1,0 +1,199 @@
+.loginlognout {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 70%);
+}
+
+.loginlogout-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px; /* Adjusted max-width for smaller screens */
+  height: auto;
+  gap: 15px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.loginlogout-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginlogout-fields input {
+  width: 100%;
+  height: 40px; /* Adjusted height */
+  padding-left: 12px; /* Adjusted padding */
+  border: 1px solid #c9c9c9;
+  color: #898888;
+  outline: none;
+  font-size: 14px; /* Adjusted font-size */
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loginlogout-container button {
+  width: 100%;
+  height: 40px; /* Adjusted height */
+  background-color: #ff4141;
+  color: white;
+  font-size: 14px; /* Adjusted font-size */
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginlogout-container button:active {
+  background-color: #932a2a;
+}
+
+.loginlogout-container p {
+  font-size: 14px; /* Adjusted font-size */
+  color: #171717;
+}
+
+.loginlogout-container span {
+  color: #ff4141;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.loginlogout-agree {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjusted gap */
+}
+
+.loginlogout-agree input {
+  width: 16px; /* Adjusted size */
+  height: 16px; /* Adjusted size */
+}
+
+.loginlognout {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 70%);
+}
+
+.loginlogout-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  gap: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+/* Styles for larger screens, up to 1280px */
+@media (max-width: 1280px) {
+  .loginlogout-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 35px 50px;
+  }
+
+  .loginlogout-fields input {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .loginlogout-container button {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .loginlogout-container p {
+    font-size: 16px;
+  }
+}
+
+/* Styles for medium screens, up to 720px */
+@media (max-width: 720px) {
+  .loginlogout-container {
+    width: 90%;
+    padding: 30px 40px;
+  }
+
+  .loginlogout-fields input {
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .loginlogout-container button {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .loginlogout-container p {
+    font-size: 16px;
+  }
+}
+
+/* Styles for small screens, up to 620px */
+@media (max-width: 620px) {
+  .loginlogout-container {
+    width: 90%;
+    padding: 25px 30px;
+  }
+
+  .loginlogout-fields input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .loginlogout-container button {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .loginlogout-container p {
+    font-size: 14px;
+  }
+}
+
+/* Styles for very small screens, up to 350px */
+@media (max-width: 350px) {
+  .loginlogout-container {
+    padding: 20px 15px;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .loginlogout-fields input {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .loginlogout-container button {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .loginlogout-container p {
+    font-size: 12px;
+  }
+
+  .loginlogout-agree input {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,91 @@
+.order-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-item-group {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.add-item-btn,
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.add-item-btn:hover,
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1024px) {
+  .order-form {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-form {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-form {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .order-form {
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 8px;
+  }
+
+  .add-item-btn,
+  .submit-btn {
+    padding: 8px;
+  }
+}

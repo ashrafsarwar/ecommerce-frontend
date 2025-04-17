@@ -1,0 +1,152 @@
+/* General Contact Section Styling */
+.contact {
+  background-color: #f3f4f6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-container h1 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.contact-details h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.contact-details a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-details a:hover {
+  color: #003d80;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  font-size: 28px;
+  color: #666;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Contact Button for Phone/Email (Optional) */
+.contact-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #003d80;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 30px;
+  }
+
+  .contact-container p {
+    font-size: 16px;
+  }
+
+  .contact-details h2 {
+    font-size: 22px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+
+  .contact-button {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Media Query for Very Small Devices (up to 350px) */
+@media (max-width: 350px) {
+  .contact-container {
+    padding: 20px 15px;
+  }
+
+  .contact-container h1 {
+    font-size: 24px;
+  }
+
+  .contact-container p {
+    font-size: 14px;
+  }
+
+  .contact-details h2 {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .contact-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

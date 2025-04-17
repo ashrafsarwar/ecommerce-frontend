@@ -1,0 +1,129 @@
+.newCollections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.newCollections h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.newCollections hr {
+  width: 280px;
+  border: none;
+  height: 4px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.newCollections-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 30px;
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 1480px) {
+  .newCollections h1 {
+    font-size: 48px;
+  }
+  .newCollections hr {
+    width: 240px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .newCollections h1 {
+    font-size: 48px;
+  }
+  .newCollections hr {
+    width: 240px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .newCollections h1 {
+    font-size: 44px;
+  }
+  .newCollections hr {
+    width: 220px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 860px) {
+  .newCollections h1 {
+    font-size: 38px;
+  }
+  .newCollections hr {
+    width: 200px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 760px) {
+  .newCollections h1 {
+    font-size: 34px;
+  }
+  .newCollections hr {
+    width: 180px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .newCollections h1 {
+    font-size: 28px;
+  }
+  .newCollections hr {
+    width: 160px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .newCollections h1 {
+    font-size: 24px;
+  }
+  .newCollections hr {
+    width: 140px;
+  }
+  .newCollections-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 95%;
+  }
+}
