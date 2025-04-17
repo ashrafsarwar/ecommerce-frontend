@@ -17,7 +17,7 @@ function Orders() {
   const fetchUserOrders = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/orders/getOrdersOfUser",
+        "http://localhost:3000/orders/getuserorders",
         {
           method: "POST",
           headers: {
@@ -31,6 +31,7 @@ function Orders() {
       const data = await response.json();
 
       if (data.success) {
+        console.log("user orders" + data.orders);
         setOrders(data.orders);
       } else {
         console.error("Error fetching orders:", data.message);
