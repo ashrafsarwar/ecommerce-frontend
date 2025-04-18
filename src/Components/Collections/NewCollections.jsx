@@ -11,7 +11,7 @@ function NewCollectins() {
     const fetchData = async () => {
       try {
         const data = await axios.get(
-          "http://localhost:3000/products/newCollection"
+          "https://backend-main-production.up.railway.app/products/newCollection"
         );
         setNewCollectionsData(data.data.newCollection);
       } catch (error) {

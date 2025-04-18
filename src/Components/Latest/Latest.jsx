@@ -28,7 +28,6 @@ function Latest() {
           )}
         </div>
       </div>
-      );
     </div>
   );
 }

@@ -23,7 +23,7 @@ export const ShopContextProvider = (props) => {
       toast.success("Item added to Cart");
       axios
         .post(
-          "http://localhost:3000/cart/addToCart",
+          "https://backend-main-production.up.railway.app/cart/addToCart",
           { itemId },
           { headers: { token } }
         )
@@ -39,7 +39,7 @@ export const ShopContextProvider = (props) => {
     if (token) {
       axios
         .post(
-          "http://localhost:3000/cart/removeFromCart",
+          "https://backend-main-production.up.railway.app/cart/removeFromCart",
           { itemId },
           { headers: { token } }
         )
@@ -57,7 +57,7 @@ export const ShopContextProvider = (props) => {
     if (token) {
       axios
         .post(
-          "http://localhost:3000/cart/removeAll",
+          "https://backend-main-production.up.railway.app/cart/removeAll",
           { itemId },
           { headers: { token } }
         )
@@ -70,7 +70,9 @@ export const ShopContextProvider = (props) => {
 
   const fetchAllProducts = async () => {
     try {
-      const res = await fetch("http://localhost:3000/products/getproduct");
+      const res = await fetch(
+        "https://backend-main-production.up.railway.app/products/getproduct"
+      );
       const data = await res.json();
       setAll_product(data.products);
     } catch (error) {
@@ -85,7 +87,7 @@ export const ShopContextProvider = (props) => {
     if (token) {
       axios
         .post(
-          "http://localhost:3000/cart/getCart",
+          "https://backend-main-production.up.railway.app/cart/getCart",
           {}, // Empty data object
           { headers: { token } } // Headers configuration object
         )

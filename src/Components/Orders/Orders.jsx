@@ -17,7 +17,7 @@ function Orders() {
   const fetchUserOrders = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/orders/getuserorders",
+        "https://backend-main-production.up.railway.app/orders/getuserorders",
         {
           method: "POST",
           headers: {

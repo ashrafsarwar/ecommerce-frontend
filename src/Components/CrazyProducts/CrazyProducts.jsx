@@ -38,7 +38,7 @@ function CrazyProducts(props) {
           )}
         </div>
       </div>
-      );
+
       <div className="explore-more" onClick={showMore}>
         Explore More
       </div>

@@ -15,7 +15,7 @@ function LoginLogout() {
   };
   const signup = async () => {
     const res = await axios.post(
-      "http://localhost:3000/users/signup",
+      "https://backend-main-production.up.railway.app/users/signup",
       formData
     );
     if (res.data.success) {
@@ -28,7 +28,7 @@ function LoginLogout() {
   };
   const signin = async () => {
     const res = await axios.post(
-      "http://localhost:3000/users/signin",
+      "https://backend-main-production.up.railway.app/users/signin",
       formData
     );
     if (res.data.success) {

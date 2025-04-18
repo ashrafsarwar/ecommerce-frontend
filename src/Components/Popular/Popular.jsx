@@ -10,7 +10,7 @@ function Popular() {
   const fetchPopularProducts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/products/popularProduct"
+        "https://backend-main-production.up.railway.app/products/popularProduct"
       );
       setPopular_data(res.data.popularProducts);
       console.log(popular_data);

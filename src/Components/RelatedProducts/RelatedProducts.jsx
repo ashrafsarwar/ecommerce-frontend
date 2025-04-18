@@ -12,7 +12,7 @@ function RelatedProducts(props) {
     const fetchRelated = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:3000/products/relatedProducts",
+          "https://backend-main-production.up.railway.app/products/relatedProducts",
           product
         );
         setAll_data(res.data.relatedProducts);
